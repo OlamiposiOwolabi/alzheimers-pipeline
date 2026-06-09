@@ -1,0 +1,8 @@
+venv/
+data/raw/
+*.csv
+*.fastq
+*.bam
+__pycache__/
+.Rhistory
+.RData
