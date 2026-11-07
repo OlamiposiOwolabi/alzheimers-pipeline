@@ -1,0 +1,31 @@
+   
+    Dry-Ice LNV
+  N       7  94
+  A      28 101
+                          PC1    PC2    PC3    PC4    PC5
+Standard deviation     42.744 21.408 15.892 13.416 12.592
+Proportion of Variance  0.365  0.092  0.051  0.036  0.032
+Cumulative Proportion   0.365  0.457  0.508  0.544  0.575
+         dx     age     sex     pmi      ph     rin   batch
+PC1 1.5e-29 2.0e-25 3.1e-10 3.0e-11 3.2e-09 1.3e-16 1.4e-02
+PC2 8.2e-01 7.5e-01 8.4e-01 7.2e-01 2.3e-04 2.0e-01 5.4e-28
+PC3 2.6e-03 5.5e-02 2.5e-01 1.1e-06 1.9e-01 9.3e-05 1.6e-10
+PC4 8.6e-01 3.6e-01 4.0e-01 1.6e-02 1.5e-02 4.7e-08 9.3e-04
+PC5 1.7e-03 8.1e-01 3.2e-02 2.8e-03 4.3e-01 6.1e-03 5.8e-01
+age>=55 subset:
+
+  N   A 
+ 85 129 
+max |logFC| diff, rerun vs old: 1.332268e-15 
+           old rerun_unadj adjusted adj_age55plus
+probes   39280       39280    39280         39280
+FDR05    26145       26145    16870         16224
+lfc0.3     542         542       71            66
+lfc0.176  2689        2689      643           591
+old DEGs 542 | adjusted 71 | overlap 71 
+old top-50 surviving adjustment: 24 
+logFC correlation old vs adjusted: 0.959 
+[1] "ID"                            "EntrezGeneID"                 
+[3] "ORF"                           "GB_ACC"                       
+[5] "PROBE_DERIVED_FROM_TRANSCRIPT" "SPOT_ID"                      
+[7] "RosettaGeneModelID"           

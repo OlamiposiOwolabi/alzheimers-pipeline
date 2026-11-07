@@ -1,0 +1,139 @@
+[1] 1
+ExpressionSet (storageMode: lockedEnvironment)
+assayData: 39280 features, 230 samples 
+  element names: exprs 
+protocolData: none
+phenoData
+  sampleNames: GSM1090501 GSM1090502 ... GSM1090730 (230 total)
+  varLabels: title geo_accession ... tissue:ch2 (63 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 10019475365 10019481149 ... 10033669049 (39280 total)
+  fvarLabels: ID EntrezGeneID ... RosettaGeneModelID (7 total)
+  fvarMetadata: Column Description labelDescription
+experimentData: use 'experimentData(object)'
+  pubMedIds: 23622250 
+Annotation: GPL4372 
+[1] "GPL4372"
+ [1] "title"                   "geo_accession"          
+ [3] "status"                  "submission_date"        
+ [5] "last_update_date"        "type"                   
+ [7] "channel_count"           "source_name_ch1"        
+ [9] "organism_ch1"            "characteristics_ch1"    
+[11] "characteristics_ch1.1"   "characteristics_ch1.2"  
+[13] "treatment_protocol_ch1"  "molecule_ch1"           
+[15] "extract_protocol_ch1"    "label_ch1"              
+[17] "label_protocol_ch1"      "taxid_ch1"              
+[19] "source_name_ch2"         "organism_ch2"           
+[21] "characteristics_ch2"     "characteristics_ch2.1"  
+[23] "characteristics_ch2.2"   "characteristics_ch2.3"  
+[25] "characteristics_ch2.4"   "characteristics_ch2.5"  
+[27] "characteristics_ch2.6"   "characteristics_ch2.7"  
+[29] "characteristics_ch2.8"   "treatment_protocol_ch2" 
+[31] "molecule_ch2"            "extract_protocol_ch2"   
+[33] "label_ch2"               "label_protocol_ch2"     
+[35] "taxid_ch2"               "hyb_protocol"           
+[37] "scan_protocol"           "description"            
+[39] "data_processing"         "platform_id"            
+[41] "contact_name"            "contact_email"          
+[43] "contact_department"      "contact_institute"      
+[45] "contact_address"         "contact_city"           
+[47] "contact_state"           "contact_zip/postal_code"
+[49] "contact_country"         "supplementary_file"     
+[51] "data_row_count"          "age:ch1"                
+[53] "age:ch2"                 "batch:ch2"              
+[55] "disease:ch2"             "gender:ch1"             
+[57] "gender:ch2"              "ph:ch2"                 
+[59] "pmi:ch2"                 "pres:ch2"               
+[61] "rin:ch2"                 "tissue:ch1"             
+[63] "tissue:ch2"             
+                       GSM1090501                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+title                  "1_PFC"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+channel_count          "2"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+source_name_ch1        "HBTRC_PF_Pool"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+treatment_protocol_ch1 "NA"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+extract_protocol_ch1   "Qiagen RNeasy spin columns with DNAse treatment  Qiagen RNeasy spin columns with DNAse treatment"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+label_ch1              "Cy3"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+label_protocol_ch1     "Samples were amplified and labeled using a custom automated two-cycle version of the MessageAmp II kit from Ambion. Hybridizations to custom Agilent microarrays were completed as described in by Hughes et al. Nat Biotech (2001), 19(4):342-7. Sample amplification, labeling, and microarray processing were performed by the Rosetta Inpharmatics Gene Expression Laboratory in Seattle, Wash."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+source_name_ch2        "1_PFC"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+treatment_protocol_ch2 "NA"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+extract_protocol_ch2   "Qiagen RNeasy spin columns with DNAse treatment  Qiagen RNeasy spin columns with DNAse treatment"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+label_ch2              "Cy5"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+label_protocol_ch2     "Samples were amplified and labeled using a custom automated two-cycle version of the MessageAmp II kit from Ambion. Hybridizations to custom Agilent microarrays were completed as described in by Hughes et al. Nat Biotech (2001), 19(4):342-7. Sample amplification, labeling, and microarray processing were performed by the Rosetta Inpharmatics Gene Expression Laboratory in Seattle, Wash."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+hyb_protocol           "Microarrays are incubated at 40C for 48 hours in a rotating carousel. Hybridizations to custom Agilent microarrays are completed as previously described (Hughes et al.Nat Biotech (2001), 19(4):342-7). Microarrays are washed to remove non-specific hybridized sample. Afterwards, microarrays are dried in an ozone-free nitrogen chamber."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+scan_protocol          "Microarrays are scanned using the Agilent LP2 laser scanner. The scanner output is a Tiff file, which contains the quantitative hybridization data from each individual microarray. The Tiff files are then processed using Rosetta custom feature extraction software."                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+description            "DLPFC"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+data_processing        "Data were processed using the Rosetta Resolver system. Rosetta's custom feature extraction software performs error modeling before data are loaded into the Resolver system. The Resolver system performs a squeeze operation that combines replicates of the same sequence in an array while applying error weighting. The error weighting consists of adjusting for additive and multiplicative noise. A P-value is generated and propagated throughout the system. The P-value represents the probability that a gene is expressed. The Resolver system allows users to set thresholds, below which genes of a P-value are considered to be significantly expressed. The Resolver system also combines multiple arrays using a squeezing process. If multiple spots reference one sequence, summarization is performed using an error-weighted average as described in Roland Stoughton and Hongyue Dai, Statistical Combining of Cell Expression Profiles. US Patent #6,351,712, February 26, 2002."
+data_row_count         "39280"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+[1] 39280   230
+[1] 342
+    0%     1%    25%    50%    75%    99%   100% 
+-2.000 -0.352 -0.048  0.005  0.056  0.323  2.000 
+[1] TRUE
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+-0.017247  0.002078  0.005504  0.005596  0.009200  0.024310 
+[1] 2262
+
+HBTRC_PF_Pool 
+          230 
+disease:ch2 | unique: 2 | NA/blank: 0 | e.g.: A N 
+age:ch1 | unique: 1 | NA/blank: 230 | e.g.: NA 
+age:ch2 | unique: 52 | NA/blank: 0 | e.g.: 100 106 22 25 46 50 
+gender:ch1 | unique: 1 | NA/blank: 230 | e.g.: NA 
+gender:ch2 | unique: 2 | NA/blank: 0 | e.g.: F M 
+batch:ch2 | unique: 3 | NA/blank: 0 | e.g.: 1 2 3 
+ph:ch2 | unique: 201 | NA/blank: 0 | e.g.: 5.406 5.542 5.565 5.579 5.639 5.644 
+pmi:ch2 | unique: 206 | NA/blank: 0 | e.g.: 1.3 10 10.17 10.25 10.33 10.62 
+rin:ch2 | unique: 29 | NA/blank: 0 | e.g.: 5.7 5.8 5.9 6.1 6.2 6.3 
+pres:ch2 | unique: 2 | NA/blank: 0 | e.g.: Dry-Ice LNV 
+
+ age:ch2 by disease
+$A
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  55.00   74.00   82.00   80.15   87.00  100.00 
+
+$N
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  22.00   55.00   61.00   62.12   69.00  106.00 
+
+
+ ph:ch2 by disease
+$A
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  5.406   6.169   6.391   6.374   6.598   7.340 
+
+$N
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  5.542   6.381   6.617   6.547   6.779   7.420 
+
+
+ pmi:ch2 by disease
+$A
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.30    7.75   12.60   13.73   19.25   34.83 
+
+$N
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   7.05   19.05   21.88   22.36   25.50   41.70 
+
+
+ rin:ch2 by disease
+$A
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  5.700   6.800   7.100   7.121   7.400   8.700 
+
+$N
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   5.90    7.00    7.30    7.31    7.60    8.20 
+
+   
+dx   F  M
+  A 67 62
+  N 19 82
+   
+dx   1  2  3
+  A 91 28 10
+  N 81 17  3
+  Column                                                  Description
+1                                                            ID_REF =
+2  VALUE normalized log10 ratio (Cy5/Cy3) representing test/reference
