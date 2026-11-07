@@ -1,0 +1,6 @@
+python 3.13.13 | sklearn 1.9.1 | numpy 2.5.4 | pandas 3.1.1
+samples 230 | probes 39280 | AD 129 | control 101
+A_expression_only (selection inside folds): mean AUC 0.962 | SD across 50 folds 0.024 | range 0.902-1.000
+B_covariates_only (logistic regression): mean AUC 0.921 | SD across 50 folds 0.037 | range 0.817-0.983
+C_expression+covariates (selection inside folds): mean AUC 0.963 | SD across 50 folds 0.025 | range 0.898-1.000
+LEAKY_REFERENCE (selection before CV; do not report): mean AUC 0.967 | SD across 50 folds 0.022 | range 0.915-1.000
