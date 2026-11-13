@@ -28,9 +28,9 @@ PC1 (36.5% of variance) is associated with diagnosis (p=1.5e-29), age (2e-25), R
 2. Effect sizes were labelled log2FC in the writeup; they are log10 ratios. The writeup also says age was NA for all samples; age:ch2 is complete.
 3. In the old results, 11 probes for XIST, RPS4Y1, DDX3Y, KDM5D, UTY and EIF1AY (matched by Entrez ID) were significant (FDR <= 0.038). Five of them (XIST x2, RPS4Y1, DDX3Y, KDM5D) passed the |logFC| > 0.3 cutoff and were in the 542. This reflects the sex imbalance (52% female in AD, 19% in controls). Only these six genes were checked.
 4. 26,145 of 39,280 probes had FDR < 0.05 in the old model, so the 542-probe list was set by the |logFC| > 0.3 cutoff, not by statistics.
-5. Classifier (AD_classifier.py): its 200 input probes were chosen before the CV, using the labels on all 230 samples (overlap with the top 200 by |logFC| in the old DE: 92). The ROC curve and its AUC (section 7 of the script) are scored on the training data. No covariate control.
+5. Classifier (AD_classifier.py): its 200 input probes appear to have been chosen with the labels on all 230 samples before the CV (overlap with the top 200 by |logFC| in the old DE: 92; no code on this machine builds AD_expression_for_ML.csv, so the rule is not confirmed). The ROC curve and its AUC (section 7 of the script) are scored on the training data. No covariate control.
 6. Writeup inconsistencies: 542 vs 477 DEG counts, a duplicated figure under Figure 4, PPI counts (451 vs 394), Table 2 ordering, GEOquery version, one reference to verify.
-- Not found: voom is not used in any code on this machine. The writeup already names the platform as Rosetta/Merck.
+- Not found: voom does not appear in either local git repository or in scripts/GSE44770_analysis_pipeline.R, which uses lmFit/eBayes (other local files not searched). The writeup already names the platform as Rosetta/Merck.
 
 ## Changes made
 - scripts/02_corrected_de.R: limma with age, sex, PMI, pH, RIN, batch. Old results kept in old_results_v1/ (CSVs are untracked via .gitignore).
@@ -39,7 +39,7 @@ PC1 (36.5% of variance) is associated with diagnosis (p=1.5e-29), age (2e-25), R
 ## Corrected results
 - Unadjusted rerun reproduces the old results exactly (max |logFC| difference 1.3e-15): 542 DEGs at FDR < 0.05 and |log10FC| > 0.3.
 - Adjusted model: 16,870 probes at FDR < 0.05; 71 at |log10FC| > 0.3 (all within the old 542); 643 at |log10FC| > 0.176; 66 in an age >= 55 sensitivity run. All 50 old top probes stay at FDR < 0.05 (median adjusted/old logFC ratio 0.65). The 11 sex-linked probes become null (FDR 0.25 to 0.94).
-- Classifier, repeated 5-fold CV x 10, ROC AUC (SD across folds is not a confidence interval): expression only 0.962 (SD 0.024); covariates only 0.921 (0.037); expression + covariates 0.963 (0.025); old design (selection before CV) 0.967 (0.022). Single cohort, no external validation. The models differ (random forest vs logistic regression). Covariates alone reach 0.92, so the expression AUC cannot be attributed to disease biology.
+- Classifier, repeated 5-fold CV x 10, ROC AUC (SD across folds is not a confidence interval): expression only 0.962 (SD 0.024); covariates only 0.921 (0.037); expression + covariates 0.963 (0.025); old design (selection before CV) 0.967 (0.022). Single cohort, no external validation. The models differ (random forest vs logistic regression). Covariates alone reach 0.92, so the expression AUC cannot be taken as evidence of disease-specific signal; this design cannot separate disease from confounding.
 
 ## Still pending
 - KEGG, PPI and CMap results were built on the unadjusted DEG list and are unvalidated.
