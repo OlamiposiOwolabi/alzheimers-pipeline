@@ -51,3 +51,6 @@ unsupervised clustering of the top 50 DEGs.
 ## Author
 
 Olamiposi Owolabi | Computational Biology | Alzheimer's Drug Discovery
+
+## Status: AI-assisted, under audit
+Parts of this pipeline were written with AI tools and were not independently checked at first. An audit is under way; see `docs/01_data_audit.md` for what has been verified, what was found wrong, and what is still pending. Results in `docs/GSE44770_PhD_MiniProject.md` come from an unadjusted model and should not be cited as findings.
